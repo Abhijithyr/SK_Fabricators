@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#e9f5f7"/><stop offset="1" stop-color="#9bc2cb"/></linearGradient></defs>
+<rect width="800" height="600" fill="url(#g)"/><path d="M70 500V165l330-100 330 100v335z" fill="#315f72"/>
+<path d="M115 455V195l285-85 285 85v260z" fill="#91bac7"/>
+<g stroke="#fff" stroke-width="11" opacity=".8"><path d="M400 110v345M115 325h570"/></g>
+<path d="M55 510h690" stroke="#245a73" stroke-width="30"/>
+<text x="400" y="565" text-anchor="middle" font-family="Arial" font-size="27" font-weight="700" fill="#263b46">MODERN COMMERCIAL EXTERIOR</text>
+</svg>

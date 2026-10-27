@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 520">
+<rect width="700" height="520" fill="#edf7fa"/><path d="M90 430V125L350 55l260 70v305z" fill="#315f72"/>
+<path d="M125 395V150l225-60 225 60v245z" fill="#91bac7"/>
+<g stroke="#fff" stroke-width="9"><path d="M350 90v305M125 270h450"/></g>
+<text x="350" y="475" text-anchor="middle" font-family="Arial" font-size="27" font-weight="700" fill="#263b46">GLASS &amp; ACP</text>
+</svg>
