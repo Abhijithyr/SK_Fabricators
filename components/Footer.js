@@ -3,9 +3,9 @@ export default function Footer() {
     <footer className="border-t border-slate-100 bg-white py-9">
       <div className="container-width flex flex-col gap-5 text-center sm:flex-row sm:items-center sm:justify-between sm:text-left">
         <div>
-          <div className="font-black tracking-tight text-[#263b46]">VANGUARD</div>
+          <div className="font-black tracking-tight text-[#263b46]">S K</div>
           <div className="text-[8px] font-bold tracking-[.17em] text-[#87969d]">
-            ARCHITECTURAL SOLUTIONS
+            FABRICATORS
           </div>
         </div>
 
@@ -18,7 +18,7 @@ export default function Footer() {
         </div>
 
         <div className="text-xs text-[#9aa5aa]">
-          © 2026 Vanguard Architectural Solutions
+          © 2026 SK Fabricators
         </div>
       </div>
     </footer>

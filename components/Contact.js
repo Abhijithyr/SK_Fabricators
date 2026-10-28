@@ -34,7 +34,7 @@ export default function Contact() {
               </div>
 
               <div className="text-sm text-[#71818a]">
-                +91 99999 99999
+                +91 98862 57136
               </div>
             </div>
           </div>
@@ -48,7 +48,7 @@ export default function Contact() {
               </div>
 
               <div className="text-sm text-[#71818a]">
-                skfrabicators@gmail.com
+                rafi@skfabricators.com
               </div>
             </div>
           </div>
@@ -62,7 +62,9 @@ export default function Contact() {
               </div>
 
               <div className="text-sm text-[#71818a]">
-                Bangalore
+                #214 Karna Sree Layout<br />
+                      3rd Stage Medahalli<br />
+                      Bengaluru, Karnataka - 560049
               </div>
             </div>
           </div>

@@ -2,9 +2,9 @@ import "./globals.css";
 
 export const metadata = {
   metadataBase: new URL("https://www.example.com"),
-  title: "Vanguard Architectural Solutions | Exterior & Facade Specialists",
+  title: "SK Fabricators | Exterior & Facade Specialists",
   description:
-    "Vanguard Architectural Solutions provides modern outdoor blinds, structural glazing, ACP cladding and fuel station canopy solutions.",
+    "SK Fabricators provides modern outdoor blinds, structural glazing, ACP cladding and fuel station canopy solutions.",
   keywords: [
     "architectural solutions",
     "exterior blinds",
@@ -14,7 +14,7 @@ export const metadata = {
     "commercial facade",
   ],
   openGraph: {
-    title: "Vanguard Architectural Solutions",
+    title: "SK Fabricators",
     description:
       "Simple, practical and modern architectural exterior solutions.",
     type: "website",

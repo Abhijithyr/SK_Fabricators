@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 520">
-<rect width="700" height="520" fill="#faf8f2"/><path d="M75 180h550l-55-68H130z" fill="#315f72"/>
-<path d="M110 180v250M590 180v250" stroke="#4e8a74" stroke-width="28"/>
-<rect x="160" y="225" width="380" height="150" rx="14" fill="#a4c7cd"/>
-<g fill="#fff"><rect x="190" y="250" width="70" height="100"/><rect x="315" y="250" width="70" height="100"/><rect x="440" y="250" width="70" height="100"/></g>
-<text x="350" y="475" text-anchor="middle" font-family="Arial" font-size="27" font-weight="700" fill="#263b46">FUEL CANOPY</text>
-</svg>
