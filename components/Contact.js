@@ -4,12 +4,63 @@ import { useState } from "react";
 import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
 
 export default function Contact() {
-  const [submitted, setSubmitted] = useState(false);
+  // const [submitted, setSubmitted] = useState(false);
 
-  function submit(event) {
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  const submit = async (event) => {
     event.preventDefault();
-    setSubmitted(true);
-  }
+
+    setLoading(true);
+    setError("");
+
+    const formData = new FormData(event.target);
+
+    // Web3Forms Access Key
+    formData.append(
+      "access_key",
+      "4022aa6a-ccc3-422a-bc18-d04ec12dac6b"
+    );
+
+    // Email subject
+    formData.append(
+      "subject",
+      "New Enquiry from Website"
+    );
+
+    try {
+      const response = await fetch(
+        "https://api.web3forms.com/submit",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+
+      const data = await response.json();
+
+      if (data.success) {
+        setSubmitted(true);
+
+        // Clear form after successful submission
+        event.target.reset();
+      } else {
+        setError("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      console.error("Web3Forms Error:", error);
+      setError("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // function submit(event) {
+  //   event.preventDefault();
+  //   setSubmitted(true);
+  // }
 
   return (
     
@@ -93,7 +144,108 @@ export default function Contact() {
         </div>
 
         {/* SECOND SECTION - FORM REMAINS THE SAME */}
+
         <form
+      onSubmit={submit}
+      className="soft-shadow rounded-2xl border border-[#dfeae5] bg-white p-6 sm:p-8"
+    >
+      {/* Name & Phone */}
+      <div className="grid gap-4 sm:grid-cols-2">
+        <input
+          required
+          type="text"
+          name="name"
+          placeholder="Your name"
+          className="rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none focus:border-[#4e8a74]"
+        />
+
+        <input
+          required
+          type="tel"
+          name="phone"
+          placeholder="Phone number"
+          className="rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none focus:border-[#4e8a74]"
+        />
+      </div>
+
+      {/* Email */}
+      <input
+        required
+        type="email"
+        name="email"
+        placeholder="Email address"
+        className="mt-4 w-full rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none focus:border-[#4e8a74]"
+      />
+
+      {/* Service */}
+      <select
+        name="service"
+        required
+        defaultValue=""
+        className="mt-4 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-600 outline-none focus:border-[#4e8a74]"
+      >
+        <option value="" disabled>
+          What do you need?
+        </option>
+
+        <option value="Outdoor Blinds">
+          Outdoor Blinds
+        </option>
+
+        <option value="Structural Glazing">
+          Structural Glazing
+        </option>
+
+        <option value="ACP Cladding">
+          ACP Cladding
+        </option>
+
+        <option value="Fuel Station Canopy">
+          Fuel Station Canopy
+        </option>
+      </select>
+
+      {/* Message */}
+      <textarea
+        required
+        name="message"
+        rows={5}
+        placeholder="Tell us briefly about the project..."
+        className="mt-4 w-full rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none focus:border-[#4e8a74]"
+      />
+
+      {/* Submit Button */}
+      <button
+        type="submit"
+        disabled={loading}
+        className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#4e8a74] px-5 py-3.5 text-sm font-bold text-white hover:bg-[#3e735f] disabled:cursor-not-allowed disabled:opacity-60"
+      >
+        {loading ? (
+          "Sending..."
+        ) : (
+          <>
+            Send Enquiry
+            <ArrowRight size={16} />
+          </>
+        )}
+      </button>
+
+      {/* Success Message */}
+      {submitted && (
+        <div className="mt-4 rounded-lg bg-[#eef8f4] p-3 text-center text-sm font-semibold text-[#3e735f]">
+          Thank you! Your enquiry was submitted successfully. We will
+          contact you shortly.
+        </div>
+      )}
+
+      {/* Error Message */}
+      {error && (
+        <div className="mt-4 rounded-lg bg-red-50 p-3 text-center text-sm font-semibold text-red-600">
+          {error}
+        </div>
+      )}
+    </form>
+        {/* <form
           onSubmit={submit}
           className="soft-shadow rounded-2xl border border-[#dfeae5] bg-white p-6 sm:p-8"
         >
@@ -148,7 +300,7 @@ export default function Contact() {
               Thank you! This demo enquiry was submitted successfully.
             </div>
           )}
-        </form>
+        </form> */}
       </div>
     </section>
   );
