@@ -131,7 +131,7 @@ export default function Contact() {
             </div>
 
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7773.927704056118!2d77.7124323594382!3d13.03797291871028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11fe770bf7ad%3A0x8f1454828f0bd4d7!2sSkfabricators!5e0!3m2!1sen!2sin!4v1793088613306!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3072.1714219626388!2d77.72117237507754!3d13.033715187287383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDAyJzAxLjQiTiA3N8KwNDMnMjUuNSJF!5e1!3m2!1sen!2sin!4v1793352287699!5m2!1sen!2sin"
               width="100%"
               height="180"
               style={{ border: 0 }}

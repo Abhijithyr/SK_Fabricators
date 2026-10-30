@@ -4,15 +4,26 @@ import Image from "next/image";
 import { useState } from "react";
 
 const projects = [
-  { title: "Private Balcony", category: "Blinds", image: "/images/petrol.jpeg" },
-  { title: "Modern Office", category: "Glazing", image: "/images/gates.jpeg" },
-  { title: "Commercial Entrance", category: "ACP", image: "/images/exterior.jpeg" },
-  { title: "Retail Canopy", category: "Fuel", image: "/images/petrol.jpeg" },
-  { title: "Commercial Entrance", category: "ACP", image: "/images/image1.jpeg" },
-  { title: "Retail Canopy", category: "Fuel", image: "/images/image2.jpeg" },
+  { title: "MRPL Petrol Bunk", category: "Petrol Bunks", image: "/images/petrol.jpeg" },
+  { title: "Gates", category: "Gates", image: "/images/gates.jpeg" },
+  { title: "Exterior Design Home", category: "Exterior", image: "/images/exterior.jpeg" },
+  { title: "HP Petrol Bunk", category: "Petrol Bunks", image: "/images/petrol.jpeg" },
+  { title: "Exterior Design Home", category: "Exterior", image: "/images/exterior.jpeg" },
+  { title: "IGI Glass Work", category: "Glass Glazing", image: "/images/image2.jpeg" },
+  { title: "Sign Board", category: "Signage and Boards", image: "/images/image2.jpeg" },
+  { title: "Gates", category: "Gates", image: "/images/gates.jpeg" },
+  { title: "JIO Petrol Bunk", category: "Petrol Bunks", image: "/images/image2.jpeg" },
+  { title: "Exterior Design Home", category: "Exterior", image: "/images/exterior.jpeg" },
+  { title: "Glass Work", category: "Glass Glazing", image: "/images/image2.jpeg" },
+  { title: "Sign Board", category: "Signage and Boards", image: "/images/image2.jpeg" },
+  { title: "BP Petrol Bunk", category: "Petrol Bunks", image: "/images/image2.jpeg" },
+  { title: "Exterior Design Home", category: "Exterior", image: "/images/exterior.jpeg" },
+  { title: "Nayara Petrol Bunk", category: "Petrol Bunks", image: "/images/image2.jpeg" },
+  { title: "Sign Board LED", category: "Signage and Boards", image: "/images/image2.jpeg" },
+
 ];
 
-const filters = ["All", "Blinds", "Glazing", "ACP", "Fuel"];
+const filters = ["All", "Gates", "Petrol Bunks", "Exterior", "Signage and Boards", "Glass Glazing"];
 
 export default function Gallery() {
   const [active, setActive] = useState("All");
@@ -27,7 +38,7 @@ export default function Gallery() {
       <div className="container-width">
         <div className="text-center">
           <div className="section-label">Our work</div>
-          <h2 className="mt-3 text-3xl font-black text-[#263b46] sm:text-4xl">
+          <h2 className="mt-3 text-3xl font-black text-[#263b46] sm:text-2xl">
             Selected project ideas
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-6 text-[#71818a]">
@@ -55,7 +66,7 @@ export default function Gallery() {
 
         <div className="mt-9 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {items.map((item, index) => (
-            <article key={`${item.title}-${index}`} className="image-wrap relative h-72">
+            <article key={`${item.title}-${index}`} className="image-wrap relative h-65">
               <Image src={item.image} alt={item.title} fill className="object-cover" />
               <div className="absolute bottom-3 left-3 right-3 rounded-xl bg-white/95 p-4">
                 <div className="text-[10px] font-black uppercase tracking-widest text-[#4e8a74]">

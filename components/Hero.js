@@ -10,14 +10,13 @@ export default function Hero() {
             <Sparkles size={14} /> Modern exterior solutions
           </div>
 
-          <h1 className="max-w-xl text-4xl font-black leading-[1.08] tracking-tight text-[#263b46] sm:text-5xl lg:text-[58px]">
-            Better exteriors,
-            <span className="block text-[#245a73]">made simple.</span>
+          <h1 className="max-w-xl text-2xl font-black leading-[1.08] tracking-tight text-[#263b46] sm:text-3xl lg:text-[42px]">
+            Built for strength
+            <span className="block text-[#245a73]">Designed to stand out.</span>
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-7 text-[#71818a] sm:text-lg">
-            Thoughtfully designed blinds, glass facades and commercial exterior
-            systems for spaces that need comfort, character and lasting value.
+            Quality fabrication solutions for petrol bunks, gates, exterior designs, glass glazing and signage — built with practical design, durable materials and a professional finish.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -51,7 +50,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="image-wrap relative min-h-[390px] soft-shadow lg:min-h-[510px]">
+        <div className="image-wrap relative min-h-[240px] soft-shadow lg:min-h-[420px]">
           <Image
             src="/images/image1.jpeg"
             alt="Modern architectural exterior with glass facade and shading"
