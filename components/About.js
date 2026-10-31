@@ -71,9 +71,9 @@ export default function About() {
       <div className="container-width grid items-center gap-8 lg:grid-cols-2">
         
         {/* About Image */}
-        <div className="image-wrap relative min-h-[280px]">
+        <div className="image-wrap relative min-h-[320px]">
           <Image
-            src="/images/image2.jpeg"
+            src="/images/Exterior Design.jpeg"
             alt="Fabrication and exterior work"
             fill
             className="object-cover"

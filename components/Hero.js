@@ -52,7 +52,7 @@ export default function Hero() {
 
         <div className="image-wrap relative min-h-[240px] soft-shadow lg:min-h-[420px]">
           <Image
-            src="/images/image1.jpeg"
+            src="/images/Exterior Design-3.jpeg"
             alt="Modern architectural exterior with glass facade and shading"
             fill
             priority

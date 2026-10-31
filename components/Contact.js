@@ -121,7 +121,7 @@ export default function Contact() {
           </div>
 
           {/* GOOGLE MAP LOCATION */}
-          <div className="mt-6 overflow-hidden rounded-2xl border border-[#dfeae5] bg-white">
+          {/* <div className="mt-6 overflow-hidden rounded-2xl border border-[#dfeae5] bg-white">
             <div className="flex items-center gap-3 border-b border-[#dfeae5] px-4 py-3">
               <MapPin className="text-[#4e8a74]" size={19} />
 
@@ -140,7 +140,7 @@ export default function Contact() {
               referrerPolicy="no-referrer-when-downgrade"
               title="Our Office Location"
             ></iframe>
-          </div>
+          </div> */}
         </div>
 
         {/* SECOND SECTION - FORM REMAINS THE SAME */}

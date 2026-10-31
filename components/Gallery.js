@@ -4,22 +4,21 @@ import Image from "next/image";
 import { useState } from "react";
 
 const projects = [
-  { title: "MRPL Petrol Bunk", category: "Petrol Bunks", image: "/images/petrol.jpeg" },
-  { title: "Gates", category: "Gates", image: "/images/gates.jpeg" },
-  { title: "Exterior Design Home", category: "Exterior", image: "/images/exterior.jpeg" },
-  { title: "HP Petrol Bunk", category: "Petrol Bunks", image: "/images/petrol.jpeg" },
-  { title: "Exterior Design Home", category: "Exterior", image: "/images/exterior.jpeg" },
-  { title: "IGI Glass Work", category: "Glass Glazing", image: "/images/image2.jpeg" },
-  { title: "Sign Board", category: "Signage and Boards", image: "/images/image2.jpeg" },
-  { title: "Gates", category: "Gates", image: "/images/gates.jpeg" },
-  { title: "JIO Petrol Bunk", category: "Petrol Bunks", image: "/images/image2.jpeg" },
-  { title: "Exterior Design Home", category: "Exterior", image: "/images/exterior.jpeg" },
-  { title: "Glass Work", category: "Glass Glazing", image: "/images/image2.jpeg" },
-  { title: "Sign Board", category: "Signage and Boards", image: "/images/image2.jpeg" },
-  { title: "BP Petrol Bunk", category: "Petrol Bunks", image: "/images/image2.jpeg" },
-  { title: "Exterior Design Home", category: "Exterior", image: "/images/exterior.jpeg" },
-  { title: "Nayara Petrol Bunk", category: "Petrol Bunks", image: "/images/image2.jpeg" },
-  { title: "Sign Board LED", category: "Signage and Boards", image: "/images/image2.jpeg" },
+  { title: "MRPL Petrol Bunk", category: "Petrol Bunks", image: "/images/Petrol-1.jpeg" },
+  { title: "Gates", category: "Gates", image: "/images/Gates-1.jpeg" },
+  { title: "Exterior Design Home", category: "Exterior", image: "/images/Exterior Design.jpeg" },
+  { title: "HP Petrol Bunk", category: "Petrol Bunks", image: "/images/Petrol-2.jpeg" },
+  { title: "Exterior Design Home", category: "Exterior", image: "/images/Exterior Design-1.jpeg" },
+  { title: "IGI Glass Work", category: "Glass Glazing", image: "/images/Glass glazing.jpeg" },
+  { title: "Sign Board LED", category: "Signage and Boards", image: "/images/Signboardled.jpeg" },
+  { title: "Gates", category: "Gates", image: "/images/Gates-2.jpeg" },
+  { title: "JIO Petrol Bunk", category: "Petrol Bunks", image: "/images/Petrol-7.jpeg" },
+  { title: "Exterior Design Home", category: "Exterior", image: "/images/Exterior Design-2.jpeg" },
+  { title: "Glass Work", category: "Glass Glazing", image: "/images/Glass glazing-1.jpeg" },
+  { title: "Sign Board", category: "Signage and Boards", image: "/images/Signboardled-1.jpeg" },
+  { title: "BP Petrol Bunk", category: "Petrol Bunks", image: "/images/Petrol-5.jpeg" },
+  { title: "Exterior Design Home", category: "Exterior", image: "/images/Exterior Design-3.jpeg" },
+  { title: "Nayara Petrol Bunk", category: "Petrol Bunks", image: "/images/Petrol-6.jpeg" },
 
 ];
 
